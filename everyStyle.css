@@ -1,0 +1,142 @@
+ .topNavBar {
+    overflow: hidden;
+    background-color: rgb(41, 41, 41);
+}
+.topNavBar a:hover {
+    background-color: rgb(77, 76, 76);
+}
+
+.topNavBar a {
+    float: left;
+    color: #d6d6d6;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.topNavBar a.main {
+    background-color: #a3035e;
+    color: white;
+}
+.topNavBar a.activated {
+    background-color: rgb(77, 76, 76);
+}
+.topNavBar a.topRight {
+    float: right;
+    padding-right: 2%;
+}
+
+body {
+   /* background-repeat: no-repeat; */
+    font-family: Century Gothic;
+    margin: 0;  /* nema prazno mesto nad navbarot */
+}
+#land{
+    background-image: url(neon2.jpg);
+    
+}
+#home {
+    background-image: url(neon3.jpg);
+    
+}
+#gallery {
+    background-image: url(neon4.jpg);
+    background-repeat: repeat; 
+    font-family: Century Gothic;
+    margin: 0;  
+}
+h1{
+
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.562),
+                 0px 8px 13px rgba(0, 0, 0, 0.39),
+                 0px 18px 23px rgba(32, 32, 32, 0.233);  /* red green blue i poslednoto e parametar za transparentnost*/
+    font-weight: 600; /* stepen na debelina na font */
+    font-size: 50px;
+    color:#E8EFF2;
+
+}
+h2 {
+     text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.342),
+                 0px 8px 13px rgba(0, 0, 0, 0.226),
+                 0px 18px 23px rgba(0, 0, 0, 0.13);
+    color: #E8EFF2;
+
+}
+hr {
+    width: 500px;   
+}
+.landContent { 
+    text-align: center;
+    padding-top: 10%;  /* da e malce podole tekstot za 10% od originalnata pozicija */
+}
+button {
+    background-color: rgb(29, 29, 29);
+    border: none;
+    color: #E8EFF2;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+button:hover {
+    background-color: rgb(94, 93, 93);
+}
+
+.homeContent {
+      color: #E8EFF2;
+      text-align: center;
+      background-color: rgba(54, 54, 54, 0.397);
+      margin: 20px 200px 20px 200px;
+      padding: 10px 50px 20px 50px;
+  }
+.galleryContent {
+      color: #E8EFF2;
+      text-align: center;
+      background-color: rgba(54, 54, 54, 0.397);
+      margin: 20px 200px 20px 200px;
+      padding: 10px 50px 20px 50px;
+}
+.homeContent h1 {
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.493),
+                 0px 8px 13px rgba(0, 0, 0, 0.308),
+                 0px 18px 23px rgba(0, 0, 0, 0.103);
+}
+.homeContLeft {
+      font-weight:bold;
+      font-size: 15px;
+      text-align: left;
+  }
+  .homeContLeft hr {
+    width: 500px;
+    float: left;
+    margin: 15px 5px 15px 5px;
+  }
+  #cvimage{
+      float:right; 
+      width: 400px;
+      height: auto;
+      border: 5px rgba(53, 53, 53, 0.699);
+  }
+  .contactInfo {
+      float:right;
+      text-align: right;
+  }
+  .contactInfo a {
+      color: #E8EFF2;
+  }
+  .instafeed {
+    align-content: flex-start;
+    
+  }
+  .instafeed img {
+      width: 300px;
+      height: 300px;
+      margin: 1.66%; 
+
+  }
+
