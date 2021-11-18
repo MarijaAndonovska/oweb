@@ -6,41 +6,122 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" type="text/css" href="everyStyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog/ Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>My Website/ Gallery</title>
 </head>
 
 <body id="gallery">
 
     <div class="topNavBar">
-        <a class="main" href="MyLandingPage.html">Landing Page</a>
+        <a class="main" href="WelcomeHomePage.html">Welcome</a>
         <!--Ova kje e samiot landing page shto treba da e active pri vklucuvanje-->
-        <a href="HomePage.html">Home</a>
+        <a href="MyFavThings.html">Favorite Things</a>
         <a href="#" class="activated">Gallery</a>
-        <a href="#blog">Blog</a>
-        <a class="topRight" href="#forum">Forum</a>
+        <a href="BlogPage.html">Blog</a>
+        <a class="topRight" href="SurveyPage.html">Survey</a>
     </div>
 
     <div class="galleryContent">
         <h1>Gallery </h1>
         <h3>I am a freelance photographer.Here are some of <br>
-            my pictures which are definetly not plagiarized. </h3>
+            my pictures which are definitely not plagiarized. </h3>
 
         <div class="instafeed">
-            <img src="bw1.jpg">
-            <img src="bw2.jpg">
-            <img src="bw3.jpg">
+            <div class="containPic">
+                <img src="pics/bw1.jpg">
+                <div class="likeSystem">
+                    <i class="fa fa-thumbs-up" ></i>
+                    <p>Upvotes: <span class="likeValue">0</span></p>
+                    <i class="fa fa-thumbs-down"></i>
+                </div>
+                <form action="" id="comm">
+                    <textarea rows="3" cols="20" id="postComment"></textarea>
+                    <button id="submitComment">Comment</button>
+                </form>
+                <div class="commentSection">
+                    
+                </div>        
+            </div>
+            <div class="containPic">
+                <img src="pics/bw2.jpg">
+                <div class="likeSystem">
+                    <i class="fa fa-thumbs-up"></i>
+                    <p>Upvotes: <span class="likeValue">0</span></p>
+                    <i class="fa fa-thumbs-down" ></i>                   
+                </div>
+                <textarea rows="3" cols="40"></textarea>
+            </div>
+            <div class="containPic">
+                <img src="pics/bw3.jpg">
+                <div class="likeSystem">
+                    <i class="fa fa-thumbs-up" ></i>
+                    <p>Upvotes: <span class="likeValue">0</span></p>
+                    <i class="fa fa-thumbs-down"></i>                   
+                </div>
+                <textarea rows="3" cols="40"></textarea>
+            </div>
 
-            <img src="bw4.jpg">
-            <img src="bw5.jpg">
-            <img src="bw6.jpg">
 
-            <img src="bw7.jpg">
-            <img src="bw8.jpg">
-            <img src="bw9.jpeg">
+            <div class="containPic">
+                <img src="pics/bw4.jpg">
+                <div class="likeSystem">
+                    <i class="fa fa-thumbs-up"></i>            
+                    <p>Upvotes: <span class="likeValue">0</span></p>
+                    <i class="fa fa-thumbs-down" ></i>
+                </div>
+                <textarea rows="3" cols="40"></textarea>
+            </div>
+            <div class="containPic">
+                <img src="pics/bw5.jpg">
+                <div class="likeSystem">
+                    <i class="fa fa-thumbs-up"></i>
+                    <p>Upvotes: <span class="likeValue">0</span></p>
+                    <i class="fa fa-thumbs-down"></i>              
+                </div>
+                <textarea rows="3" cols="40"></textarea>
+            </div>
+            <div class="containPic">
+                <img src="pics/bw6.jpg">
+                <div class="likeSystem">
+                    <i class="fa fa-thumbs-up"></i>
+                    <p>Upvotes: <span class="likeValue">0</span></p>
+                    <i class="fa fa-thumbs-down"></i>                   
+                </div>
+                <textarea rows="3" cols="40"></textarea>
+            </div>
+
+
+            <div class="containPic">
+                <img src="pics/bw7.jpg">
+                <div class="likeSystem">
+                    <i class="fa fa-thumbs-up"></i>
+                    <p>Upvotes: <span class="likeValue">0</span></p>
+                    <i class="fa fa-thumbs-down" ></i>
+                </div>
+                <textarea rows="3" cols="40"></textarea>
+            </div>
+            <div class="containPic">
+                <img src="pics/bw8.jpg">
+                <div class="likeSystem">
+                    <i class="fa fa-thumbs-up"></i>
+                    <p>Upvotes: <span class="likeValue">0</span></p>
+                    <i class="fa fa-thumbs-down"></i>
+                </div>
+                <textarea rows="3" cols="40"></textarea>
+            </div>
+            <div class="containPic">
+                <img src="pics/bw9.jpeg">
+                <div class="likeSystem">
+                    <i class="fa fa-thumbs-up"></i>
+                    <p>Upvotes: <span class="likeValue">0</span></p>
+                    <i class="fa fa-thumbs-down" ></i>                    
+                </div>
+                <textarea rows="3" cols="40"></textarea>
+            </div>
         </div>
 
     </div>
 
 </body>
-
+<script src="webPage.js"></script>
 </html>
