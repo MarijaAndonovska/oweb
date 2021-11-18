@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="everyStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+</head>
+
+<body id="land">
+    <div class="topNavBar">
+        <a class="main" href="#">Welcome</a>
+        <!--Ova kje e samiot landing page shto treba da e active pri vklucuvanje-->
+        <a href="MyFavThings.html">Favorite Things</a>
+        <a href="GalleryPage.html">Gallery</a>
+        <a href="BlogPage.html">Blog</a>
+        <a class="topRight" href="SurveyPage.html">Survey</a>
+    </div>
+
+    <div class="landContent">
+        <h1 class="welc">Welcome to my website</h1>
+        <h2 class="welc">This is a very nice web page</h2>
+        <hr id="boldiraj">
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        <a href="https://www.pinterest.com/" class="fa fa-pinterest"></a>
+        <!--a href="HomePage.html"><button>About Me</button></a>
+        <a href="GalleryPage.html"><button>View Gallery</button></a>-->
+    </div>
+
+    <div class="homeContent">
+        <h1>About Me</h1>
+
+        <div class="homeContLeft">
+            <img src="pics/jasibaron1.jpg" id="cvimage">
+            <h3>Basic information</h3>
+
+            <p> My name is Marija, I live in Skopje, Macedonia and I study<br>
+                electrical engineering.In my free time I like to draw , cook <br>
+                and watch movies. I also have a dog named Baron. He is a Labrador <br>
+                and he is 10 years old. Baron likes to eat a lot and loves everyone.
+                <br> <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                Temporibus quia a, praesentium sed saepe non vitaeesse accusamus <br>
+                aspernatur eligendi, voluptatem doloremque ipsum?<br>
+                Ut optio modi, fuga quo placeat earum. Lorem ipsum dolor sit amet <br>
+                consectetur adipisicing elit. Quam harum dolorem dolore debitis <br>
+                temporibus perferendis exercitationem explicabo? Assumenda, perferendis<br>
+                quisquam voluptates veritatis quasi facere! Voluptate doloribus a <br>
+                expedita dolores quidem?
+            </p>
+        </div>
+
+        <br> <br>
+        <div class="centerInfo">
+            <h3>Lorem Ipsum</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                Temporibus quia a, praesentium sed saepe non vitaeesse accusamus <br>
+                aspernatur eligendi, voluptatem doloremque ipsum?<br>
+                Ut optio modi, fuga quo placeat earum. Lorem ipsum dolor sit amet <br>
+                consectetur adipisicing elit. Quam harum dolorem dolore debitis <br>
+                temporibus perferendis exercitationem explicabo? Assumenda, perferendis<br>
+                quisquam voluptates veritatis quasi facere! Voluptate doloribus a <br>
+                expedita dolores quidem?
+            </p>
+        </div>
+    </div>
+
+    <div class = "listsContent">
+        <br>
+            <h2>Things I like doing:</h2>
+            <ul>
+                <li>Cooking</li>
+                <li>Drawing</li>
+                <li>Watching movies, my favorite are:
+                    <ol>
+                        <li>Tokyo Godfathers</li>
+                        <li>Office Space</li>
+                        <li>Kill Bill</li>
+                        <li>Children of Men</li>
+                    </ol>
+                </li>
+                <li>Listening to music:
+                    <ul>
+                        <li>pop (only 2000s pop)</li>
+                        <li>funk</li>
+                        <li>hip hop</li>
+                    </ul>
+                </li>
+                <li>Photography</li>
+            </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+<script>
+    $(window).scroll(function(){
+    $(".landContent").css("opacity", 1 - $(window).scrollTop() / 500);
+  });
+</script>
+
+</html>
