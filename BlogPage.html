@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="everyStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website/ Blog</title>
+</head>
+<body id="blog">
+    <div class="topNavBar">
+        <a class="main" href="WelcomeHomePage.html">Welcome</a>
+        <a href="MyFavThings.html">Favorite Things</a>
+        <a href="GalleryPage.html">Gallery</a>
+        <a href="#" class="activated">Blog</a>
+        <a class="topRight" href="SurveyPage.html">Survey</a>
+    </div>
+    <div class="blogContent">
+        <h1>My Blog</h1>
+        <div class="blogTextArea">
+            <form action="" id="shelter">
+                <textarea cols="30" rows="5" placeholder="Write post here" id="postBlog"></textarea>
+                <button id="post">Post</button>
+            </form>
+            <div class="blogContLeft">
+            
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const form = document.querySelector("#shelter");
+    const formatPost = document.querySelector(".blogContLeft");
+    const input = document.querySelector("#postBlog");
+    const par = document.querySelector('#posted');
+
+    form.addEventListener("submit", function(e){
+        const d = new Date();
+        const str2 = d.getHours().toString();
+        const str1 = d.getMinutes().toString();
+        const str3 = d.getSeconds().toString();
+        const str = str2+": "+ str1 + ": "+ str3;
+        
+        d.getHours();
+        e.preventDefault();
+        console.log("submitted");  
+        const newPar = document.createElement('h3');       
+        newPar.textContent = "Posted at " + str +"->   " + input.value;
+        formatPost.prepend(newPar);
+    })
+</script>
+</html>
