@@ -1,12 +1,15 @@
-   .topNavBar {
+.topNavBar 
+ {
     overflow: hidden; 
     background-color: rgb(41, 41, 41);
 }
-.topNavBar a:hover {
+.topNavBar a:hover 
+{
     background-color: rgb(77, 76, 76);
 }
 
-.topNavBar a {
+.topNavBar a 
+{
     float: left;
     color: #d6d6d6;
     text-align: center;
@@ -16,19 +19,23 @@
     cursor: pointer;
 }
 
-.topNavBar a.main {
+.topNavBar a.main 
+{
     background-color: #83628b;
     color: white;
 }
-.topNavBar a.activated {
+.topNavBar a.activated 
+{
     background-color: rgb(77, 76, 76);
 }
-.topNavBar a.topRight {
+.topNavBar a.topRight 
+{
     float: right;
     padding-right: 2%;
 }
 
-.fa {
+.fa 
+{
     padding: 10px;
     font-size: 20px;
     width: 25px;
@@ -39,38 +46,44 @@
     color: white;
 }
   
-.fa:hover {
+.fa:hover 
+{
     opacity: 0.7;
 }
 
-body {
+body 
+{
    /* background-repeat: no-repeat; */
     font-family: Century Gothic;
     margin: 0;  /* nema prazno mesto nad navbarot */
     background-attachment: fixed;
 }
-#land{
+#land
+{
     background-image: url(bg/119.jpg);
     background-size: contain;  
 }
-#home {
+#home 
+{
     background-image: url(bg/116.jpg);
     
 }
-#gallery {
+#gallery 
+{
     background-image: url(bg/112.jpg);
     font-family: Century Gothic;
     margin: 0;  
 }
-#blog {
+#blog 
+{
     background-image: url(bg/114.jpg);
 }
-#forum {
+#forum 
+{
     background-image: url(bg/113.jpg);
 }
-
-
-h1 {
+h1 
+{
     color: #574669;
     text-shadow: 0px 4px 3px rgba(31, 31, 31, 0.205),
                  0px 8px 13px rgba(31, 31, 31, 0.137),
@@ -78,23 +91,27 @@ h1 {
     font-weight: 600; /* stepen na debelina na font */
     font-size: 50px;
 }
-.landContent h1{
+.landContent h1
+{
     color:#2a2a2b;  
 }
 
-h2 {
+h2 
+{
     color:#2a2a2b;
     text-shadow: 0px 4px 3px rgba(31, 31, 31, 0.205),
                  0px 8px 13px rgba(31, 31, 31, 0.137),
                  0px 18px 23px rgba(30, 30, 30, 0.089);
 }
-.landContent hr {
+.landContent hr 
+{
     width: 500px;  
     border: 1px solid; 
     border-color: rgb(41, 41, 41);
 }
 
-.landContent { /* napravi vo shirok box model */ 
+.landContent /* napravi vo shirok box model */
+{  
     text-align: center;
     position: relative;
    /* padding-top: 10%;   da e malce podole tekstot za 10% od originalnata pozicija */
@@ -104,11 +121,27 @@ h2 {
     opacity: 1;
 
 }
-button {
+button 
+{
     background-color: rgb(29, 29, 29);
     border: none;
     color: #E8EFF2;
-    padding: 15px 32px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+   /* display: inline-block; */
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    float: right;
+} 
+
+.buttons input 
+{
+    background-color: rgb(29, 29, 29);
+    border: none;
+    color: #E8EFF2;
+    padding: 15px, 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -116,22 +149,12 @@ button {
     margin: 4px 2px;
     cursor: pointer;
 }
-.buttons input {
-    background-color: rgb(29, 29, 29);
-    border: none;
-    color: #E8EFF2;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-button:hover {
+button:hover 
+{
     background-color: rgb(94, 93, 93);
 }
-.homeContent {
+.homeContent 
+{
     color: #252525;
     text-align: center;
     background-color: rgba(247, 247, 247, 0.705);
@@ -139,8 +162,9 @@ button:hover {
     padding: 10px 200px 60px 200px;
     font-weight:bold;
 
-  }
-.listsContent{
+}
+.listsContent
+{
     background-color: rgba(112, 93, 117, 0.808);
     color: #dbdbdb;
     margin: 0;
@@ -148,107 +172,182 @@ button:hover {
     font-weight:bold;
     font-size: 15px;
 }
-.listsContent h2 {
+.listsContent h2 
+{
     color: #dbdbdb;
 }
-p, h3 {
+p, h3
+{
     color: #756a81;
 }
-.likeSystem {
-    font-weight: 600;
-    font-size: 15px;
-}
-.galleryContent, .favContent , .blogContent{
+.galleryContent, .favContent , .blogContent
+{
     color: #2a2a2b;
     text-align: center;
     background-color: rgba(241, 240, 240, 0.438);
     margin: 20px 150px 20px 150px;
     padding: 10px 10px 10px 10px;
 }
-.favContent {
+.favContent 
+{
     margin: 20px 100px 20px 100px;
     padding: 10px 50px 20px 50px;
 }
 
-.movies , .recipes{
+.movies , .recipes
+{
     display: flex;
     justify-content: space-between;;
 }
-.movies img {
+.movies img 
+{
     width:250px;
 }
-.recipes img {
+.recipes img 
+{
     width: 200px;
     margin: 1%;
 }
-.favLeft {
+.favLeft 
+{
     text-align: left;
 }
 
-.homeContLeft {
+.homeContLeft 
+{
     font-size: 15px;
     text-align: left;
 }
-.blogContLeft {
+.blogContLeft 
+{
     font-weight:bold;
     font-size: 15px;
     text-align: left;
-    ;
+    
 }
-.blogContent h3, .blogContLeft p{
+.blogContent h3, .blogContLeft p
+{
     color: #181818;
 }
-.homeContLeft hr {
+.homeContLeft hr 
+{
     width: 500px;
     float: left;
     margin: 15px 5px 15px 5px;
 }
-#cvimage{
+#cvimage
+{
     float:right; 
     width: 400px;
     height: auto;
     border: 5px rgba(53, 53, 53, 0.699);
 }
-.contactInfo {
-    float:right;
+.contactInfo 
+{
+    float: right; 
     text-align: right;
 }
-.contactInfo a {
+.contactInfo a 
+{
     color: #E8EFF2;
 }
 
-.containPic{
-    text-align: center;
-    margin: 15px;
+#addPhoto
+{
+    margin: 25px 15px;
+    padding: 15px;
+    text-align: left;
+}
+.containPic
+{
+    /*text-align: center; */
+    margin: 25px 15px;
     padding: 15px;
     background-color: rgba(248, 237, 248, 0.637);
-    display:inline-block;
-   /* vertical-align: text-top; */
-   
+    /*width: fit-content; */
+     vertical-align: text-top;    
 }
-.containPic img {
+.postBlog
+{
+    font-weight:bold;
+    font-size: 15px;
+    text-align: left;
+    margin: 25px 50px;
+    padding: 30px;
+    background-color: rgba(248, 237, 248, 0.637);
+}
+.containBlogTxt
+{
+    
+    margin: 25px 50px;
+    padding: 30px;
+    background-color: rgba(248, 237, 248, 0.637);
+}
+.containPic img , .newlyAddedImage
+{
     width: 300px;
     height: 300px; 
-}
-.containPic p {
-    display:inline-block;
-}
+} 
 
-.formFill {
+.childLS 
+{
+    display: inline-block;
+}
+.instafeed 
+{
+    text-align: left;
+}
+.textCommSect 
+{
+    float:right;
+    width: fit-content;
+}
+.textCommSect h4
+{
+    margin: 0px;
+    padding-left: 15px;
+    color: #655972 ;  
+}
+.commentSection 
+{
+    margin: 15px;
+    padding-left: 10px;
+    background-color: rgba(205, 195, 209, 0.356);
+    width:730px;
+    height: 300px;
+    overflow-y: scroll;
+}
+.commentSection p 
+{
+    color: #756a81;
+}
+.childComm 
+{
+    display: inline-block;
+}
+.likeSystem 
+{
+    font-weight: 600;
+    font-size: 15px;
+    padding-left: 50px;
+}
+.formFill 
+{
     text-align: left;
     font-weight: 600;
+    margin: 50px;
 }
-textarea{
+textarea
+{
     color: #252525;
-    background-color: rgb(211, 211, 211) ;
+    background-color: rgb(255, 255, 255) ;
     border-color: rgb(211, 211, 211);
 }
-.texts input {
+.texts input 
+{
     color: #252525;
-    background-color: rgb(211, 211, 211) ;
+    background-color: rgb(255, 255, 255) ;
 }
-
-
 
 
 
