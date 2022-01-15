@@ -18,12 +18,42 @@
     <div class="blogContent">
         <h1>My Blog</h1>
         <div class="blogTextArea">
-            <form action="" id="shelter">
-                <textarea cols="30" rows="5" placeholder="Write post here" id="postBlog"></textarea>
-                <button id="post">Post</button>
-            </form>
-            <div class="blogContLeft">
+            <div class="postBlog">
+                <form action="" id="shelter">
+                    <textarea cols="40" rows="8" placeholder="Write post here" id="postBlog"></textarea>
+                    <button id="postB" style="width: 100px; height: 50px;">Post</button>
+                </form>
+            </div>
             
+            <div class="blogContLeft">
+                <div class="containBlogTxt">
+                    <h3 style="color: rgb(84, 60, 90);">
+                        Posted 07.26.21, at 12:23:05
+                    </h3>
+                    <p style="color: rgb(130, 93, 138);">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est aspernatur enim quis quos tempore illo <br>
+                        eaque repudiandae sequi qui porro a laudantium omnis ipsam atque quas, quo alias optio dolorum. Lorem <br>
+                        ipsum dolor sit amet consectetur adipisicing elit. Impedit velit beatae necessitatibus quaerat pariatur <br>
+                        harum? Dolore non id tenetur laboriosam. Excepturi earum voluptates commodi tempora modi voluptate dolore, itaque quibusdam?<br>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est aspernatur enim quis quos tempore illo <br>
+                        eaque repudiandae sequi qui porro a laudantium omnis ipsam atque quas, quo alias optio dolorum. Lorem <br>
+                        ipsum dolor sit amet consectetur adipisicing elit. Impedit velit beatae necessitatibus quaerat pariatur <br>
+                        harum? Dolore non id tenetur laboriosam. Excepturi earum voluptates commodi tempora modi voluptate dolore, itaque quibusdam?
+                    </p>
+                </div>
+                <div class="containBlogTxt">
+                    <h3 style="color: rgb(84, 60, 90);">
+                        Posted 08.20.21, at 12:23:05
+                    </h3>
+                    <p style="color: rgb(130, 93, 138);">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est aspernatur enim quis quos tempore illo <br>
+                        eaque repudiandae sequi qui porro a laudantium omnis ipsam atque quas, quo alias optio dolorum. Lorem <br>
+                        ipsum dolor sit amet consectetur adipisicing elit. Impedit velit beatae necessitatibus quaerat pariatur <br>
+                        harum? Dolore non id tenetur laboriosam. Excepturi earum voluptates commodi tempora modi voluptate dolore, itaque quibusdam?<br>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est aspernatur enim quis quos tempore illo <br>
+                        eaque repudiandae sequi qui porro a laudantium omnis ipsam atque quas, quo alias optio dolorum. 
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -36,17 +66,25 @@
 
     form.addEventListener("submit", function(e){
         const d = new Date();
-        const str2 = d.getHours().toString();
-        const str1 = d.getMinutes().toString();
-        const str3 = d.getSeconds().toString();
-        const str = str2+": "+ str1 + ": "+ str3;
+        const str = d.getHours().toString() + ": "+ d.getMinutes().toString() + ": "+ d.getSeconds().toString();
+        const day1 = d.getDate().toString() + "." + d.getMonth().toString() + "." + (d.getFullYear() - 2000).toString();
         
         d.getHours();
-        e.preventDefault();
-        console.log("submitted");  
-        const newPar = document.createElement('h3');       
-        newPar.textContent = "Posted at " + str +"->   " + input.value;
-        formatPost.prepend(newPar);
+        e.preventDefault(); 
+        const newH3 = document.createElement('h3');
+        const newPar = document.createElement('p');
+        const newDiv = document.createElement('div'); 
+
+        newPar.style.color = "rgb(130, 93, 138)";
+        newH3.style.color = "rgb(84, 60, 90)";
+        newH3.textContent = "Posted on "+ day1 + ", at " + str +":   ";
+        newPar.textContent = input.value;
+        
+        newDiv.append(newH3);
+        newDiv.append(newPar);
+        
+        newDiv.classList.add('containBlogTxt');
+        formatPost.prepend(newDiv);
     })
 </script>
 </html>
